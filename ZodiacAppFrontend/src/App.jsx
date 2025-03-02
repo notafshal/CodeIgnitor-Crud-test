@@ -73,18 +73,18 @@ const App = () => {
           onChange={(e) =>
             setFormData({ ...formData, full_name: e.target.value })
           }
-          className="border p-2 rounded"
+          className="border p-2 rounded-full"
         />
         <input
           type="text"
           placeholder="Zodiac"
           value={formData.zodiac}
           onChange={(e) => setFormData({ ...formData, zodiac: e.target.value })}
-          className="border p-2 rounded"
+          className="border p-2 rounded-full"
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white p-2 rounded hover:cursor-pointer"
+          className="bg-blue-500 text-white p-2 rounded-full hover:cursor-pointer"
         >
           Add
         </button>
@@ -107,14 +107,14 @@ const App = () => {
               <td className="p-2 flex justify-center gap-2">
                 <button
                   onClick={() => openEditModal(record)}
-                  className="bg-yellow-500 text-white px-3 py-1 rounded hover:cursor-pointer"
+                  className="bg-yellow-500 text-white px-3 py-1 rounded-full hover:cursor-pointer"
                 >
                   Edit
                 </button>
 
                 <button
                   onClick={() => handleDelete(record.id)}
-                  className="bg-red-500 text-white px-3 py-1 rounded hover:cursor-pointer "
+                  className="bg-red-500 text-white px-3 py-1 rounded-full hover:cursor-pointer "
                 >
                   Delete
                 </button>
@@ -136,7 +136,7 @@ const App = () => {
                 onChange={(e) =>
                   setEditData({ ...editData, full_name: e.target.value })
                 }
-                className="border p-2 rounded"
+                className="border p-2 rounded-full"
               />
               <input
                 type="text"
@@ -145,18 +145,18 @@ const App = () => {
                 onChange={(e) =>
                   setEditData({ ...editData, zodiac: e.target.value })
                 }
-                className="border p-2 rounded"
+                className="border p-2 rounded-full"
               />
               <div className="flex justify-between">
                 <button
                   type="submit"
-                  className="bg-green-500 text-white px-4 py-1 rounded hover:cursor-pointer"
+                  className="bg-green-500 text-white px-4 py-1 rounded-full hover:cursor-pointer"
                 >
                   Save
                 </button>
                 <button
                   onClick={() => setIsModalOpen(false)}
-                  className="bg-gray-500 text-white px-4 py-1 rounded hover:cursor-pointer"
+                  className="bg-gray-500 text-white px-4 py-1 rounded-full hover:cursor-pointer"
                 >
                   Cancel
                 </button>
